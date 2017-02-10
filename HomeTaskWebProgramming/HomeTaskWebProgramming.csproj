@@ -277,6 +277,7 @@
     <Content Include="cursor\HiVis_yllo_stripes.cur" />
     <Content Include="cursor\leftyblack.cur" />
     <Content Include="cursor\text.cur" />
+    <Content Include="Details.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -287,32 +288,6 @@
     <Content Include="bin\roslyn\Microsoft.CSharp.Core.targets" />
     <Content Include="bin\roslyn\Microsoft.VisualBasic.Core.targets" />
     <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
-    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
-    <Content Include="obj\Debug\HomeTaskWebProgramming.csprojResolveAssemblyReference.cache" />
-    <Content Include="obj\Release\CSAutoParameterize\original\Account\Web.config" />
-    <Content Include="obj\Release\CSAutoParameterize\original\Web.config" />
-    <Content Include="obj\Release\CSAutoParameterize\transformed\Account\Web.config" />
-    <Content Include="obj\Release\CSAutoParameterize\transformed\Web.config" />
-    <Content Include="obj\Release\DesignTimeResolveAssemblyReferencesInput.cache" />
-    <Content Include="obj\Release\HomeTaskWebProgramming.csprojResolveAssemblyReference.cache" />
-    <Content Include="obj\Release\Package\PackageTmp\Account\Web.config" />
-    <Content Include="obj\Release\Package\PackageTmp\ApplicationInsights.config" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CSharp.Core.targets" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.VisualBasic.Core.targets" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\VBCSCompiler.exe.config" />
-    <Content Include="obj\Release\Package\PackageTmp\Bundle.config" />
-    <Content Include="obj\Release\Package\PackageTmp\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="obj\Release\Package\PackageTmp\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="obj\Release\Package\PackageTmp\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="obj\Release\Package\PackageTmp\packages.config" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\jquery-1.10.2.min.map" />
-    <Content Include="obj\Release\Package\PackageTmp\Service References\Application Insights\ConnectedService.json" />
-    <Content Include="obj\Release\Package\PackageTmp\Site.Master" />
-    <Content Include="obj\Release\Package\PackageTmp\Site.Mobile.Master" />
-    <Content Include="obj\Release\Package\PackageTmp\Web.config" />
-    <Content Include="obj\Release\TransformWebConfig\assist\Web.config" />
-    <Content Include="obj\Release\TransformWebConfig\original\Web.config" />
-    <Content Include="obj\Release\TransformWebConfig\transformed\Web.config" />
     <Content Include="cursor\3.ani" />
     <Content Include="cursor\greenLightning.ani" />
     <Content Include="Web.config" />
@@ -325,113 +300,6 @@
     <Content Include="images\22.jpg" />
     <Content Include="images\blye.jpg" />
     <Content Include="Default.aspx" />
-    <Content Include="obj\Debug\HomeTaskWebProgramming.csproj.FileListAbsolute.txt" />
-    <Content Include="obj\Debug\HomeTaskWebProgramming.dll" />
-    <Content Include="obj\Debug\HomeTaskWebProgramming.pdb" />
-    <Content Include="obj\Release\CSAutoParameterize.parameters.xml" />
-    <Content Include="obj\Release\HomeTaskWebProgramming.csproj.FileListAbsolute.txt" />
-    <Content Include="obj\Release\HomeTaskWebProgramming.dll" />
-    <Content Include="obj\Release\HomeTaskWebProgramming.pdb" />
-    <Content Include="obj\Release\Package\HomeTaskWebProgramming.SourceManifest.xml" />
-    <Content Include="obj\Release\Package\PackageTmp\Account\AddPhoneNumber.aspx" />
-    <Content Include="obj\Release\Package\PackageTmp\Account\Confirm.aspx" />
-    <Content Include="obj\Release\Package\PackageTmp\Account\Forgot.aspx" />
-    <Content Include="obj\Release\Package\PackageTmp\Account\Lockout.aspx" />
-    <Content Include="obj\Release\Package\PackageTmp\Account\Login.aspx" />
-    <Content Include="obj\Release\Package\PackageTmp\Account\Manage.aspx" />
-    <Content Include="obj\Release\Package\PackageTmp\Account\ManageLogins.aspx" />
-    <Content Include="obj\Release\Package\PackageTmp\Account\ManagePassword.aspx" />
-    <Content Include="obj\Release\Package\PackageTmp\Account\OpenAuthProviders.ascx" />
-    <Content Include="obj\Release\Package\PackageTmp\Account\Register.aspx" />
-    <Content Include="obj\Release\Package\PackageTmp\Account\RegisterExternalLogin.aspx" />
-    <Content Include="obj\Release\Package\PackageTmp\Account\ResetPassword.aspx" />
-    <Content Include="obj\Release\Package\PackageTmp\Account\ResetPasswordConfirmation.aspx" />
-    <Content Include="obj\Release\Package\PackageTmp\Account\TwoFactorAuthenticationSignIn.aspx" />
-    <Content Include="obj\Release\Package\PackageTmp\Account\VerifyPhoneNumber.aspx" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\Antlr3.Runtime.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\AspNet.ScriptManager.bootstrap.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\AspNet.ScriptManager.jQuery.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\EntityFramework.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\EntityFramework.SqlServer.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\HomeTaskWebProgramming.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.ApplicationInsights.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.ApplicationInsights.Extensibility.DependencyCollector.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.ApplicationInsights.Extensibility.PerfCounterCollector.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.ApplicationInsights.Extensibility.Web.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.ApplicationInsights.Extensions.Intercept_x64.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.ApplicationInsights.Extensions.Intercept_x86.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.ApplicationInsights.Web.TelemetryChannel.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.AspNet.FriendlyUrls.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.AspNet.Identity.Core.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.AspNet.Identity.EntityFramework.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.AspNet.Identity.Owin.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.AspNet.Web.Optimization.WebForms.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.Diagnostics.Instrumentation.Extensions.Intercept.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.Owin.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.Owin.Host.SystemWeb.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.Owin.Security.Cookies.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.Owin.Security.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.Owin.Security.Facebook.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.Owin.Security.Google.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.Owin.Security.OAuth.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.Owin.Security.Twitter.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.ScriptManager.MSAjax.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.ScriptManager.WebForms.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\Microsoft.Web.Infrastructure.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\Newtonsoft.Json.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\Owin.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\csc.exe" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CodeAnalysis.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Collections.Immutable.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\System.Reflection.Metadata.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\vbc.exe" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\roslyn\VBCSCompiler.exe" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\System.Web.Optimization.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\System.Web.Providers.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\bin\WebGrease.dll" />
-    <Content Include="obj\Release\Package\PackageTmp\Content\bootstrap.css" />
-    <Content Include="obj\Release\Package\PackageTmp\Content\bootstrap.min.css" />
-    <Content Include="obj\Release\Package\PackageTmp\Content\Site.css" />
-    <Content Include="obj\Release\Package\PackageTmp\favicon.ico" />
-    <Content Include="obj\Release\Package\PackageTmp\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="obj\Release\Package\PackageTmp\HomeTask.aspx" />
-    <Content Include="obj\Release\Package\PackageTmp\Login.aspx" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\bootstrap.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\bootstrap.min.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\jquery-1.10.2.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\jquery-1.10.2.min.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\modernizr-2.6.2.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\respond.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\respond.min.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\DetailsView.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\Focus.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\GridView.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\Menu.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MenuStandards.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjax.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxApplicationServices.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxComponentModel.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxCore.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxGlobalization.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxHistory.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxNetwork.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxSerialization.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxTimer.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxWebForms.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\MSAjax\MicrosoftAjaxWebServices.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\SmartNav.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\TreeView.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\WebForms.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\WebParts.js" />
-    <Content Include="obj\Release\Package\PackageTmp\Scripts\WebForms\WebUIValidation.js" />
-    <None Include="obj\Release\Package\PackageTmp\Scripts\_references.js" />
-    <Content Include="obj\Release\Package\PackageTmp\ViewSwitcher.ascx" />
-    <Content Include="obj\Release\_WPPLastBuildInfo.txt" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -587,6 +455,13 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Details.aspx.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Details.aspx.designer.cs">
+      <DependentUpon>Details.aspx</DependentUpon>
+    </Compile>
     <Compile Include="HomeTask.aspx.cs">
       <DependentUpon>HomeTask.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -602,12 +477,6 @@
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
-    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
-    <Compile Include="obj\Release\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
-    <Compile Include="obj\Release\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
-    <Compile Include="obj\Release\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -634,11 +503,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="obj\Debug\TempPE\" />
-    <Folder Include="obj\Release\Database\" />
-    <Folder Include="obj\Release\ProfileTransformWebConfig\transformed\Account\" />
-    <Folder Include="obj\Release\TempPE\" />
-    <Folder Include="obj\Release\TransformWebConfig\transformed\Account\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />

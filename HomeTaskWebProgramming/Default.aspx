@@ -23,14 +23,14 @@
         <br />
         <asp:Label ID="Label1" runat="server" Font-Size="X-Large" Text="Enter your name"></asp:Label>
         :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="TextBox1" runat="server" Height="21px" Width="221px"></asp:TextBox>
+        <asp:TextBox ID="TextBox1" runat="server" Height="21px" Width="221px" Font-Size="X-Large"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1" ErrorMessage="Please enter your name" ForeColor="#990000"></asp:RequiredFieldValidator>
 
         <br />
 &nbsp;&nbsp;
         <br />
         <br />
-        <asp:Button ID="LoginButton" runat="server" OnClick="Button2_Click" Text="Login" BackColor="#FFCC99" Font-Size="Large" ForeColor="Yellow" Height="29px" Width="85px" />
+        <asp:Button ID="LoginButton" runat="server" OnClick="Button2_Click" Text="Login" BackColor="#FFCC99" style="background-image: url('images/blye.jpg')" Font-Size="Large" ForeColor="Black" Height="29px" Width="85px" />
         <br />
         <br />
         <br />

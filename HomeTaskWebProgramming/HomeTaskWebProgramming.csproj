@@ -315,6 +315,7 @@
     <Content Include="obj\Release\TransformWebConfig\transformed\Web.config" />
     <Content Include="cursor\3.ani" />
     <Content Include="cursor\greenLightning.ani" />
+    <Content Include="Web.config" />
     <None Include="Properties\PublishProfiles\HomeTaskWeb - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\HomeTaskWeb - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -323,7 +324,7 @@
     <Content Include="images\21.jpg" />
     <Content Include="images\22.jpg" />
     <Content Include="images\blye.jpg" />
-    <Content Include="Login.aspx" />
+    <Content Include="Default.aspx" />
     <Content Include="obj\Debug\HomeTaskWebProgramming.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\HomeTaskWebProgramming.dll" />
     <Content Include="obj\Debug\HomeTaskWebProgramming.pdb" />
@@ -463,7 +464,6 @@
     <Content Include="favicon.ico" />
     <Content Include="Site.Master" />
     <Content Include="ViewSwitcher.ascx" />
-    <Content Include="Web.config" />
     <Content Include="Bundle.config" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
@@ -594,12 +594,12 @@
     <Compile Include="HomeTask.aspx.designer.cs">
       <DependentUpon>HomeTask.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />

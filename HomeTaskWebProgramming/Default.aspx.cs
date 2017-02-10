@@ -11,12 +11,12 @@ namespace HomeTaskWebProgramming
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
 
         protected void Button2_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/Details.aspx");
+            Session["name"] = TextBox1.Text;
         }
     }
 }

@@ -26,9 +26,11 @@
         </div>
     <div>
         <div  style=" width:400px; margin: auto; background-color: #C0C0C0;">
-        <asp:Table ID="Table1" runat="server" CssClass="table table-hover" Font-Size="X-Large" >
+        <asp:Table ID="Table1" runat="server" CssClass="table table-hover" Font-Size="Large" >
          </asp:Table>            
          </div>
+        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+        <br />
 <%--         <center>--%>
 <%--         <asp:Button ID="Button1" runat="server" Text="Client #"  CssClass="btn btn-warning" OnClick="Button1_Click" />--%>
 <%--         <asp:Button ID="Button2" runat="server" Text="IP Address"  CssClass="btn btn-success" OnClick="Button2_Click" />--%>
@@ -36,6 +38,9 @@
 <%--         </center>--%>
     </div>
     </div>
+        <p align="center">
+            <asp:Button ID="Button1" runat="server" Text="Not Active" />
+        </p>
     </form>
 </body>
 </html>

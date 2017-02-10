@@ -1,40 +1,114 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Xml.Serialization;
 
 namespace HomeTaskWebProgramming
 {
     public partial class Details : System.Web.UI.Page
     {
-        List<Client> cl = new List<Client>();
+        public List<Client> cl = new List<Client>();
+//        public Client temp;
         protected void Page_Load(object sender, EventArgs e)
         {
+            var temp = new Client();
+//            writeToXml("clients.xml");
+
+//            cl = ReadFromXml();
+
+            temp.Ipadder = HttpContext.Current.Request.UserHostAddress;
+            temp.status = "Active";
+//            Label1.Text = Session["name"].ToString();
+            temp.name = "ABC";
+//            if (Session["name"].ToString() != null)
+//                Console.WriteLine(Session["name"].ToString());
+//            Console.Read();
+//            string name = Session["name"].ToString();
+//            temp.name = name;
+            cl.Add(temp);
+
+
+            var temp2=new Client();
+            temp2.Ipadder = HttpContext.Current.Request.UserHostAddress;
+            temp2.status = "Not Active";
+            temp2.name = "HAMZA";
+
+            cl.Add(temp2);
+
+            var temp3=new Client();
+            temp3.Ipadder = "52.35.88.25";
+            temp3.status = "Not Active";
+            temp3.name = "Asas";
+
+            cl.Add(temp3);
+
+
+            //            writeToXml("cliens.xml");
+            Console.WriteLine("I am here");
+
             TableHeaderRow hr = new TableHeaderRow();
             TableCell hrc1 = new TableCell();
             TableCell hrc2 = new TableCell();
             TableCell hrc3 = new TableCell();
+            TableCell hrc4 = new TableCell();
 
             hrc1.Text = "Client #";
-            hrc2.Text = "Ip Adress";
-            hrc3.Text = "Status";
+            hrc2.Text = "Name";
+            hrc3.Text = "Ip Adress";
+            hrc4.Text = "Status";
 
             hr.Cells.Add(hrc1);
             hr.Cells.Add(hrc2);
             hr.Cells.Add(hrc3);
+            hr.Cells.Add(hrc4);
 
             Table1.Rows.Add(hr);
+
+            int i = 0;
+            foreach (var entry in cl)
+            {
+                i++;
+                TableRow tr = new TableRow();
+                TableCell c1 = new TableCell();
+                TableCell c2 = new TableCell();
+                TableCell c3 = new TableCell();
+                TableCell c4 = new TableCell();
+
+
+                c1.Text = i.ToString();
+                c2.Text = entry.name;
+                c3.Text = entry.Ipadder;
+                c4.Text = entry.status;
+
+
+                tr.Cells.Add(c1);
+                tr.Cells.Add(c2);
+                tr.Cells.Add(c3);
+                tr.Cells.Add(c4);
+                Table1.Rows.Add(tr);
+            }
         }
 
-        public class Client
+
+        public void writeToXml(string file)
         {
-            private string Ipadder;
-            private string status;
-            private string number;
+            var xls = new XmlSerializer(typeof(List<Client>));
+            TextWriter tw = new StreamWriter(file);
+            xls.Serialize(tw, cl);
+            tw.Close();
+        }
 
-
+        public static List<Client> ReadFromXml(string filePath)
+        {
+            var deserializer = new XmlSerializer(typeof(List<Client>));
+            TextReader tr = new StreamReader(filePath);
+            var temp = (List<Client>) deserializer.Deserialize(tr);
+            tr.Close();
+            return temp;
         }
 
         private string GetUserIP()
@@ -51,17 +125,35 @@ namespace HomeTaskWebProgramming
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-
         }
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-
         }
 
         protected void Button3_Click(object sender, EventArgs e)
         {
-
         }
+    }
+}
+
+public class Client
+{
+    public string name { get; set; }
+    public string Ipadder { get; set; }
+    public string status { get; set; }
+
+    public Client(string name, string ipadder, string status)
+    {
+        name = name;
+        Ipadder = ipadder;
+        this.status = status;
+    }
+
+    public Client()
+    {
+        name = "";
+        Ipadder = "";
+        status = "Not Active";
     }
 }

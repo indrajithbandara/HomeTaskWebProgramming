@@ -29,7 +29,6 @@
         <asp:Table ID="Table1" runat="server" CssClass="table table-hover" Font-Size="Large" >
          </asp:Table>            
          </div>
-        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
         <br />
 <%--         <center>--%>
 <%--         <asp:Button ID="Button1" runat="server" Text="Client #"  CssClass="btn btn-warning" OnClick="Button1_Click" />--%>

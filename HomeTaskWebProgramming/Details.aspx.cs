@@ -11,68 +11,46 @@ namespace HomeTaskWebProgramming
 {
     public partial class Details : System.Web.UI.Page
     {
-        public List<Client> cl = new List<Client>();
+        public static List<Client> cl = new List<Client>();
 //        public Client temp;
         protected void Page_Load(object sender, EventArgs e)
         {
             var temp = new Client();
             //            writeToXml("clients.xml");
-            var path = Server.MapPath(@"~/XmlFiles/clients.xml");
-
+            var path = Server.MapPath(@"~/xml/clients.xml");
             cl = ReadFromXml(path);
 
-            temp.Ipadder = HttpContext.Current.Request.UserHostAddress.ToString();
-            temp.browser = HttpContext.Current.Request.Browser.ToString();
 
-            temp.status = "Active";
-//            Label1.Text = Session["name"].ToString();
-            temp.name = "ABC";
-//            if (Session["name"].ToString() != null)
-//                Console.WriteLine(Session["name"].ToString());
-//            Console.Read();
-//            string name = Session["name"].ToString();
-//            temp.name = name;
-            cl.Add(temp);
+            if (!IsPostBack)
+            {
+                if (HttpContext.Current.Request.UserHostAddress != null)
+                    temp.Ipadder = HttpContext.Current.Request.UserHostAddress.ToString();
+                temp.browser = HttpContext.Current.Request.Browser.ToString();
+                temp.status = "Active";
+                temp.name = Session["name"].ToString();
+                cl.Add(temp);
 
-
-//            var temp2 = new Client();
-//            temp2.Ipadder = HttpContext.Current.Request.UserHostAddress;
-//            temp2.status = "Not Active";
-//            temp2.name = "HAMZA";
-
-//            cl.Add(temp2);
-//
-//            var temp3 = new Client();
-//            temp3.Ipadder = "52.35.88.25";
-//            temp3.status = "Not Active";
-//            temp3.name = "Asas";
-//
-//            cl.Add(temp3);
-
+                //will write the list to the file
+                WriteToXml(path);
+            }
 
             //+The file is written
-            WriteToXml(path);
-//            Console.WriteLine("I am here");
 
             TableHeaderRow hr = new TableHeaderRow();
             TableCell hrc1 = new TableCell();
             TableCell hrc2 = new TableCell();
             TableCell hrc3 = new TableCell();
             TableCell hrc4 = new TableCell();
-            TableCell hrc5 = new TableCell();
 
             hrc1.Text = "Client #";
-            hrc1.Text = "Client #";
             hrc2.Text = "Name";
-            hrc3.Text = "Ip Adress";
-            hrc4.Text = "Browser";
-            hrc5.Text = "Status";
+            hrc3.Text = "Ip Address";
+            hrc4.Text = "Status";
 
             hr.Cells.Add(hrc1);
             hr.Cells.Add(hrc2);
             hr.Cells.Add(hrc3);
             hr.Cells.Add(hrc4);
-            hr.Cells.Add(hrc5);
 
             Table1.Rows.Add(hr);
 
@@ -85,15 +63,12 @@ namespace HomeTaskWebProgramming
                 TableCell c2 = new TableCell();
                 TableCell c3 = new TableCell();
                 TableCell c4 = new TableCell();
-                TableCell c5 = new TableCell();
-
 
                 c1.Text = i.ToString();
                 c2.Text = entry.name;
                 c3.Text = entry.Ipadder;
-                c4.Text = entry.browser;
-                c5.Text = entry.status;
-               
+                c4.Text = entry.status;
+
 
                 tr.Cells.Add(c1);
                 tr.Cells.Add(c2);
@@ -104,7 +79,7 @@ namespace HomeTaskWebProgramming
         }
 
 
-        public void WriteToXml(string file)
+        public static void WriteToXml(string file)
         {
             var xls = new XmlSerializer(typeof(List<Client>));
             TextWriter tw = new StreamWriter(file);
@@ -144,6 +119,22 @@ namespace HomeTaskWebProgramming
         protected void Button3_Click(object sender, EventArgs e)
         {
         }
+
+        protected void Button1_Click1(object sender, EventArgs e)
+        {
+            foreach (var entry in cl)
+            {
+                if (entry.name.Equals(Session["name"].ToString()))
+                    entry.status = "Not Active";
+            }
+            var path = Server.MapPath(@"~/xml/clients.xml");
+            WriteToXml(path);
+        }
+
+        protected void Button2_Click1(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Default.aspx");
+        }
     }
 }
 
@@ -154,7 +145,7 @@ public class Client
     public string Ipadder { get; set; }
     public string status { get; set; }
 
-    public Client(string name, string browser,string ipadder, string status)
+    public Client(string name, string browser, string ipadder, string status)
     {
         name = name;
         browser = browser;

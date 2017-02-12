@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfClient xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Client>
+    <name>Ali</name>
+    <browser>System.Web.Mobile.MobileCapabilities</browser>
+    <Ipadder>::1</Ipadder>
+    <status>Not Active</status>
+  </Client>
+  <Client>
+    <name>Usama</name>
+    <browser>System.Web.Mobile.MobileCapabilities</browser>
+    <Ipadder>::1</Ipadder>
+    <status>Active</status>
+  </Client>
+</ArrayOfClient>

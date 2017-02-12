@@ -15,8 +15,8 @@ namespace HomeTaskWebProgramming
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Details.aspx");
             Session["name"] = TextBox1.Text;
+            Response.Redirect("~/Details.aspx");
         }
     }
 }

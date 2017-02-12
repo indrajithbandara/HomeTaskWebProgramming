@@ -38,7 +38,8 @@
     </div>
     </div>
         <p align="center">
-            <asp:Button ID="Button1" runat="server" Text="Not Active" />
+            <asp:Button ID="Button1" runat="server" Text="Make this session Not Active" OnClick="Button1_Click1" />
+            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click1" Text="Return " />
         </p>
     </form>
 </body>

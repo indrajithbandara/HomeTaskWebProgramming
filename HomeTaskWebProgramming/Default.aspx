@@ -20,10 +20,9 @@
         <br />
         <br />
         <br />
-        <br />
         <asp:Label ID="Label1" runat="server" Font-Size="X-Large" Text="Enter your name"></asp:Label>
-        :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:TextBox ID="TextBox1" runat="server" Height="21px" Width="221px" Font-Size="X-Large"></asp:TextBox>
+        :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp
+        <asp:TextBox ID="TextBox1" runat="server" Height="21px" Width="221px"  Font-Size="X-Large"></asp:TextBox>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1" ErrorMessage="Please enter your name" ForeColor="#990000"></asp:RequiredFieldValidator>
 
         <br />
